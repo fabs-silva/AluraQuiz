@@ -9,16 +9,17 @@ const Widget = styled.div`
     overflow: hidden;
 
     h1, h2, h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 700;
         line-height: 1;
         margin-bottom: 0;
     }
 
     p{
-        font-size: 0.875rem;
+        font-size: 0.9rem;
         font-weight: 400;
-        line-height: 1;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
     }
 `;
 

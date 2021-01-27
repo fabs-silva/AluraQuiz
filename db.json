@@ -1,7 +1,8 @@
 {
     "bg": "/images/background.jpeg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz do Eurovision",
+    "description": "Quanto você sabe sobre o Eurovision? Faça o teste e descubra!",
+    "github": "https://github.com/fabs-silva/AluraQuiz",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,10 +32,12 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#F10080",
-        "secondary": "#FF4200",
-        "mainBg": "#36011D",
-        "footerBg": "rgba(54, 1, 29, .6)",
+        "primary": "#2F63A5",
+        "secondary": "#6D9FC4",
+        "secondaryOpacity": "rgba(109, 159, 196, .8)",
+        "mainBg": "#0B142E",
+        "footerBg": "rgba(0, 8, 31, .5)",
+        "githubBg": "#FF4200",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
         "success": "#4CAF50"
