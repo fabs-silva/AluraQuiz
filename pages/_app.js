@@ -31,16 +31,14 @@ const GlobalStyle = createGlobalStyle`
 
 const { theme } = db;
 
-// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>ESCQuiz</title>
+        <title>ESCQuiz - Quanto você sabe sobre Eurovision?</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
 
-        <title>ESCQuiz - Quanto você sabe sobre Eurovision?</title>
         <meta name="title" content="ESCQuiz - Quanto você sabe sobre Eurovision?" />
         <meta name="description" content="Quiz em português sobre o Eurovision Song Contest, maior competição musical do mundo." />
 

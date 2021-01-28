@@ -1,6 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Input = styled.input`
+const InputBase = styled.input`
   font: 400 1rem 'Jost';
   display: block;
   width: 100%;
@@ -22,4 +24,27 @@ const Input = styled.input`
   }
 `;
 
-export default Input;
+export default function Input({
+  onChange, placeholder, type, ...props
+}) {
+  return (
+    <InputBase
+      onChange={onChange}
+      placeholder={placeholder}
+      type="text"
+      {...props}
+    />
+  );
+}
+
+Input.defaultProps = {
+  value: '',
+};
+
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+};
