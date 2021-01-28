@@ -17,7 +17,7 @@ const Button = styled.button`
 
   &:disabled{
     background-color: #8b8b8b;
-    color: ${({ theme }) => theme.colors.mainBg};
+    color: #494949;
     cursor: not-allowed;
 
     &:focus, &:hover{
