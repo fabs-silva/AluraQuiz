@@ -40,11 +40,12 @@ function QuestionWidget({
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
             return (
-              <Widget.Topic as="label" htmlFor={alternativeId}>
+              <Widget.Topic as="label" htmlFor={alternativeId} key={alternativeId}>
                 <input
                   id={alternativeId}
                   name={questionId}
                   type="radio"
+                  style={{ marginRight: '.5rem' }}
                 />
                 {alternative}
               </Widget.Topic>
@@ -78,11 +79,7 @@ export default function Quiz() {
 
   function handleSubmitQuiz() {
     const nextQuestion = questionIndex + 1;
-    if (nextQuestion < totalQuestions) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setScreenState(screenStates.RESULT);
-    }
+    return (nextQuestion < totalQuestions) ? setCurrentQuestion(nextQuestion) : setScreenState(screenStates.RESULT);
   }
 
   return (

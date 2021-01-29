@@ -11,7 +11,7 @@ const Widget = styled.div`
     h1, h2, h3 {
         font-size: 1.1rem;
         font-weight: 700;
-        line-height: 1;
+        line-height: 1.2;
         margin: 0;
         padding: .3rem 0;
     }
@@ -19,7 +19,7 @@ const Widget = styled.div`
     p{
         font-size: 0.9rem;
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 1.3;
         margin-bottom: 1.5rem;
     }
 `;
