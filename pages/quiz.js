@@ -6,6 +6,8 @@ import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
 import Loader from '../src/components/Loader';
+import AlternativesForm from '../src/components/AlternativesForm';
+import Results from '../src/components/Results';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Button from '../src/components/Button';
 
@@ -15,14 +17,29 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
+const Input = styled.input`
+  margin-right: .5rem;
+  margin-bottom: 0;
+`;
+
 function QuestionWidget({
-  question, questionIndex, totalQuestions, onSubmit,
+  question, questionIndex, totalQuestions, addResult, onSubmit,
 }) {
   const questionId = `question__${questionIndex}`;
+  const [selectedAlternative, setSelectedAlternative] = useState(undefined);
+  const isCorrect = selectedAlternative + 1 === question.answer;
+  const [isQuestionSubmitted, setIsQuestionSubmitted] = useState(false);
+  const hasAlternativeSelected = selectedAlternative !== undefined;
 
   const submitData = (infosDoEvento) => {
     infosDoEvento.preventDefault();
-    onSubmit();
+    setIsQuestionSubmitted(true);
+    setTimeout(() => {
+      addResult(isCorrect);
+      onSubmit();
+      setIsQuestionSubmitted(false);
+      setSelectedAlternative(undefined);
+    }, 3 * 1000);
   };
 
   return (
@@ -36,23 +53,34 @@ function QuestionWidget({
       <Widget.Content>
         <h2>{question.title}</h2>
         <p>{question.description}</p>
-        <form onSubmit={submitData}>
+        <AlternativesForm onSubmit={submitData}>
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
+            const selectedAlternativeStatus = (isQuestionSubmitted && isCorrect) ? 'SUCCESS' : 'ERROR';
+            const isSelected = selectedAlternative === alternativeIndex;
             return (
-              <Widget.Topic as="label" htmlFor={alternativeId} key={alternativeId}>
-                <input
+              <Widget.Topic
+                as="label"
+                htmlFor={alternativeId}
+                key={alternativeId}
+                data-selected={isSelected}
+                data-status={selectedAlternativeStatus}
+              >
+                <Input
                   id={alternativeId}
                   name={questionId}
+                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                  checked={isSelected}
                   type="radio"
-                  style={{ marginRight: '.5rem' }}
                 />
                 {alternative}
               </Widget.Topic>
             );
           })}
-          <Button type="submit">Confirmar</Button>
-        </form>
+          <Button type="submit" disabled={!hasAlternativeSelected}>Confirmar</Button>
+          {isQuestionSubmitted && isCorrect && <p>Você acertou!</p>}
+          {isQuestionSubmitted && !isCorrect && <p>Você errou!</p>}
+        </AlternativesForm>
       </Widget.Content>
     </Widget>
   );
@@ -66,10 +94,18 @@ const screenStates = {
 
 export default function Quiz() {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
+  const [results, setResults] = useState([]);
   const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
+
+  function addResult(result) {
+    setResults([
+      ...results,
+      result,
+    ]);
+  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -92,16 +128,13 @@ export default function Quiz() {
             questionIndex={questionIndex}
             totalQuestions={totalQuestions}
             onSubmit={handleSubmitQuiz}
+            addResult={addResult}
           />
         )}
         {screenState === screenStates.LOADING && <Loader />}
         {screenState === screenStates.RESULT
           && (
-          <Widget>
-            <Widget.Content>
-              Você acertou X questões, parabéns!
-            </Widget.Content>
-          </Widget>
+          <Results results={results} />
           )}
       </QuizContainer>
       <GitHubCorner projectUrl={db.github} />

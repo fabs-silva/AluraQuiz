@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const QuizBackground = styled.div`
     width: 100%;
-    background: url(${({ backgroundImage }) => backgroundImage}) ${({ theme }) => theme.colors.mainBg} center no-repeat;
+    background: url(${({ backgroundImage }) => backgroundImage}) ${({ theme }) => theme.colors.mainBg} center no-repeat fixed;
     background-size: cover;
     flex: 1;
 

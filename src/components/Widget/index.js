@@ -55,7 +55,7 @@ Widget.Topic = styled.a`
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => `${theme.colors.primary}40`};
   padding: .75rem 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   cursor: pointer;
   border-radius: ${({ theme }) => theme.borderRadius};
   transition: .3s;
@@ -64,6 +64,10 @@ Widget.Topic = styled.a`
   &:hover, &:focus{
     opacity: .5;
   }
+
+  &:nth-child(4){
+    margin-bottom: 1.25rem;
+  }  
 `;
 
 export default Widget;
