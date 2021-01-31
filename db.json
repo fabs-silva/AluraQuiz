@@ -136,7 +136,9 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://gamequiz.brunoamaia.vercel.app/",
+    "https://alura-quiz-basquete.hermeshcg.vercel.app/"
   ],
   "theme": {
     "colors": {
