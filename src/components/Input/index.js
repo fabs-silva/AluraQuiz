@@ -14,8 +14,9 @@ const InputBase = styled.input`
   color: ${({ theme }) => theme.colors.contrastText};
   
   &::placeholder{
+    font-size: .9rem;
     color: ${({ theme }) => theme.colors.contrastText};
-    opacity: .6;
+    opacity: .7;
   }
 
   &:focus{

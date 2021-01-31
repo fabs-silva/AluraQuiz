@@ -1,155 +1,155 @@
 {
-    "bg": "/images/background.jpeg",
-    "title": "Quiz do Eurovision",
-    "description": "Quanto você sabe sobre o Eurovision? Faça o teste e descubra!",
-    "github": "https://github.com/fabs-silva/AluraQuiz",
-    "questions": [
-      {
-        "image": "../images/questions/question1.jpg",
-        "imagedesc": "Vencedoras do Eurovision",
-        "title": "Em que ano tivemos 4 países vencedores?",
-        "description": "O regulamento da época não previa empates",
-        "answer": 3,
-        "alternatives": [
-           "1956",
-           "1959",
-           "1969",
-           "1970"
-        ]
-      },
-      {
-        "image": "../images/questions/question2.jpg",
-        "imagedesc": "Austrália no Eurovision",
-        "title": "Quem foi o primeiro representante oficial da Austrália?",
-        "description": "Quem estava concorrendo pra valer",
-        "answer": 1,
-        "alternatives": [
-          "Guy Sebastian",
-          "Jessica Mauboy",
-          "Dami Im",
-          "Bella Paige"
-        ]
-      },
-      {
-        "image": "../images/questions/question3.jpeg",
-        "imagedesc": "Aline Lahoud",
-        "title": "Que país desistiu de sua estreia por não querer transmitir a performance de Israel?",
-        "description": "Aconteceu em 2005",
-        "answer": 4,
-        "alternatives": [
-          "Egito",
-          "Tunísia",
-          "Marrocos",
-          "Líbano"
-        ]
-      },
-      {
-        "image": "../images/questions/question4.jpeg",
-        "imagedesc": "Vencedor do Eurovision",
-        "title": "Que artista ficou conhecido pelo apelido Mr. Eurovision?",
-        "description": "Venceu duas vezes como cantor e uma como compositor",
-        "answer": 1,
-        "alternatives": [
-          "Johnny Logan",
-          "Zeljko Joksimovic",
-          "Izhar Cohen",
-          "Alexander Rybak"
-        ]
-      },
-      {
-        "image": "../images/questions/question5.jpg",
-        "imagedesc": "Eurovision 1956",
-        "title": "Onde aconteceu a primeira edição do Eurovision?",
-        "description": "Foi em 1956, com sete países participantes",
-        "answer": 3,
-        "alternatives": [
-          "Berna, Suíça",
-          "Roma, Itália",
-          "Lugano, Suíça",
-          "Lausanne, Suíça"
-        ]
-      },
-      {
-        "image": "../images/questions/question6.jpeg",
-        "imagedesc": "Troféu EBU",
-        "title": "Que outro festival também é organizado pela EBU?",
-        "description": "Além do Eurovision Choir e Eurovision Young Musicians",
-        "answer": 2,
-        "alternatives": [
-          "Sanremo",
-          "Junior Eurovision",
-          "Turksvision",
-          "AfriMusic"
-        ]
-      },
-      {
-        "image": "../images/questions/question7.jpg",
-        "imagedesc": "Representante da Bélgica",
-        "title": "Que premiação é dada ao pior figurino de cada edição do Eurovision?",
-        "description": "Homenagem a representante da Bélgica",
-        "answer": 4,
-        "alternatives": [
-          "Marcel Bezençon",
-          "Kate Ryan",
-          "Telex",
-          "Barbara Dex"
-        ]
-      },
-      {
-        "image": "../images/questions/question8.jpg",
-        "imagedesc": "Kaliopi",
-        "title": "Em que edições tivemos 'pré-seleções' de países antes do festival principal?",
-        "description": "Antes de incluirem semifinais",
-        "answer": 1,
-        "alternatives": [
-          "1993 e 1996",
-          "1995 e 1996",
-          "1989 e 1993",
-          "1993 e 2000"
-        ]
-      },
-      {
-        "image": "../images/questions/question9.jpg",
-        "imagedesc": "Vencedora do Eurovision",
-        "title": "Quem foi a vencedora mais jovem da história do Eurovision?",
-        "description": "Tinha apenas 13 anos",
-        "answer": 4,
-        "alternatives": [
-          "Dana",
-          "Gigliola Cinquetti",
-          "Lena",
-          "Sandra Kim"
-        ]
-      },
-      {
-        "image": "../images/questions/question10.jpg",
-        "imagedesc": "Representante da Rússia",
-        "title": "Quem foi a representante da Rússia impedida de participar do Eurovision por problemas políticos?",
-        "description": "Guerra entre russos e ucranianos",
-        "answer": 2,
-        "alternatives": [
-          "Dina Garipova",
-          "Julia Samoylova",
-          "Polina Gagarina",
-          "Julia Savicheva"
-        ]
-      }
-    ],
-    "external": [
-      ""
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#2F63A5",
-        "secondary": "#6D9FC4",
-        "secondaryOpacity": "rgba(109, 159, 196, .8)",
-        "mainBg": "#0B142E",
-        "footerBg": "rgba(0, 8, 31, .5)",
-        "githubBg": "#FF4200",
-        "contrastText": "#FFFFFF",
-        "wrong": "#8f1717",
-        "success": "#4CAF50"
-      },
-      "borderRadius": "5px"
+  "bg": "/images/background.jpeg",
+  "title": "Quiz do Eurovision",
+  "description": "Quanto você sabe sobre o Eurovision? Faça o teste e descubra!",
+  "github": "https://github.com/fabs-silva/AluraQuiz",
+  "questions": [
+    {
+      "image": "../images/questions/question1.jpg",
+      "imagedesc": "Vencedoras do Eurovision",
+      "title": "Em que ano tivemos 4 países vencedores?",
+      "description": "O regulamento da época não previa empates",
+      "answer": 3,
+      "alternatives": [
+        "1956",
+        "1959",
+        "1969",
+        "1970"
+      ]
+    },
+    {
+      "image": "../images/questions/question2.jpg",
+      "imagedesc": "Austrália no Eurovision",
+      "title": "Quem foi o primeiro representante oficial da Austrália?",
+      "description": "Quem estava concorrendo pra valer",
+      "answer": 1,
+      "alternatives": [
+        "Guy Sebastian",
+        "Jessica Mauboy",
+        "Dami Im",
+        "Bella Paige"
+      ]
+    },
+    {
+      "image": "../images/questions/question3.jpeg",
+      "imagedesc": "Aline Lahoud",
+      "title": "Que país desistiu de sua estreia por não querer transmitir a performance de Israel?",
+      "description": "Aconteceu em 2005",
+      "answer": 4,
+      "alternatives": [
+        "Egito",
+        "Tunísia",
+        "Marrocos",
+        "Líbano"
+      ]
+    },
+    {
+      "image": "../images/questions/question4.jpeg",
+      "imagedesc": "Vencedor do Eurovision",
+      "title": "Que artista ficou conhecido pelo apelido Mr. Eurovision?",
+      "description": "Venceu duas vezes como cantor e uma como compositor",
+      "answer": 1,
+      "alternatives": [
+        "Johnny Logan",
+        "Zeljko Joksimovic",
+        "Izhar Cohen",
+        "Alexander Rybak"
+      ]
+    },
+    {
+      "image": "../images/questions/question5.jpg",
+      "imagedesc": "Eurovision 1956",
+      "title": "Onde aconteceu a primeira edição do Eurovision?",
+      "description": "Foi em 1956, com sete países participantes",
+      "answer": 3,
+      "alternatives": [
+        "Berna, Suíça",
+        "Roma, Itália",
+        "Lugano, Suíça",
+        "Lausanne, Suíça"
+      ]
+    },
+    {
+      "image": "../images/questions/question6.jpeg",
+      "imagedesc": "Troféu EBU",
+      "title": "Que outro festival também é organizado pela EBU?",
+      "description": "Além do Eurovision Choir e Eurovision Young Musicians",
+      "answer": 2,
+      "alternatives": [
+        "Sanremo",
+        "Junior Eurovision",
+        "Turksvision",
+        "AfriMusic"
+      ]
+    },
+    {
+      "image": "../images/questions/question7.jpg",
+      "imagedesc": "Representante da Bélgica",
+      "title": "Que premiação é dada ao pior figurino de cada edição do Eurovision?",
+      "description": "Homenagem a representante da Bélgica",
+      "answer": 4,
+      "alternatives": [
+        "Marcel Bezençon",
+        "Kate Ryan",
+        "Telex",
+        "Barbara Dex"
+      ]
+    },
+    {
+      "image": "../images/questions/question8.jpg",
+      "imagedesc": "Kaliopi",
+      "title": "Em que edições tivemos 'pré-seleções' de países antes do festival principal?",
+      "description": "Antes de incluirem semifinais",
+      "answer": 1,
+      "alternatives": [
+        "1993 e 1996",
+        "1995 e 1996",
+        "1989 e 1993",
+        "1993 e 2000"
+      ]
+    },
+    {
+      "image": "../images/questions/question9.jpg",
+      "imagedesc": "Vencedora do Eurovision",
+      "title": "Quem foi a vencedora mais jovem da história do Eurovision?",
+      "description": "Tinha apenas 13 anos",
+      "answer": 4,
+      "alternatives": [
+        "Dana",
+        "Gigliola Cinquetti",
+        "Lena",
+        "Sandra Kim"
+      ]
+    },
+    {
+      "image": "../images/questions/question10.jpg",
+      "imagedesc": "Representante da Rússia",
+      "title": "Quem foi a representante da Rússia impedida de participar do Eurovision por problemas políticos?",
+      "description": "Guerra entre russos e ucranianos",
+      "answer": 2,
+      "alternatives": [
+        "Dina Garipova",
+        "Julia Samoylova",
+        "Polina Gagarina",
+        "Julia Savicheva"
+      ]
     }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#2F63A5",
+      "secondary": "#6D9FC4",
+      "secondaryOpacity": "rgba(109, 159, 196, .8)",
+      "mainBg": "#0B142E",
+      "footerBg": "rgba(0, 8, 31, .5)",
+      "githubBg": "#FF4200",
+      "contrastText": "#FFFFFF",
+      "wrong": "#8f1717",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "5px"
   }
+}

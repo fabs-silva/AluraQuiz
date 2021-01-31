@@ -56,7 +56,7 @@ function QuestionWidget({
         <AlternativesForm onSubmit={submitData}>
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
-            const selectedAlternativeStatus = (isQuestionSubmitted && isCorrect) ? 'SUCCESS' : 'ERROR';
+            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
             return (
               <Widget.Topic
@@ -64,7 +64,7 @@ function QuestionWidget({
                 htmlFor={alternativeId}
                 key={alternativeId}
                 data-selected={isSelected}
-                data-status={selectedAlternativeStatus}
+                data-status={isQuestionSubmitted && alternativeStatus}
               >
                 <Input
                   id={alternativeId}
@@ -134,7 +134,7 @@ export default function Quiz() {
         {screenState === screenStates.LOADING && <Loader />}
         {screenState === screenStates.RESULT
           && (
-          <Results results={results} />
+            <Results results={results} />
           )}
       </QuizContainer>
       <GitHubCorner projectUrl={db.github} />

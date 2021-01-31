@@ -1,10 +1,10 @@
 import React from 'react';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import Widget from '../Widget';
 import Button from '../Button';
 
 export default function ResultsWidget({ results }) {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <Widget>
@@ -39,7 +39,7 @@ export default function ResultsWidget({ results }) {
             </li>
           ))}
         </ul>
-        <Button onClick={() => router.back()}>Voltar</Button>
+        <Button onClick={() => router.back()} type="button">Voltar</Button>
       </Widget.Content>
     </Widget>
   );

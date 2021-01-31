@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>ESCQuiz - Quanto você sabe sobre Eurovision?</title>
+        <link rel="icon" href="favicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
 
